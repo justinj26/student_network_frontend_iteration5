@@ -1,0 +1,65 @@
+.button_row {
+  display: flex;
+  justify-content: space-around;
+
+  position: absolute;
+  width: 85%;
+  height: 85px;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+
+  background: #f9b916;
+}
+
+.sn_banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  width: 15%;
+  height: 125px;
+  left: 0;
+  top: 0;
+  padding: 0px;
+  margin: 0px;
+
+  background: #f9b916;
+}
+/* The Student Network */
+.sn_banner {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25em;
+  line-height: 30px;
+  /* or 111% */
+
+  color: rgb(255, 0, 0);
+
+  border: 1px solirgb(184, 150, 150) 00;
+}
+
+.main_grid {
+  position: absolute;
+  width: 800px;
+  height: 622px;
+  left: 25%;
+  top: 254px;
+}
+
+.button_row {
+  display: flex;
+  justify-content: space-around;
+
+  position: absolute;
+  width: 85%;
+  height: 85px;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+
+  background: #f9b916;
+}
