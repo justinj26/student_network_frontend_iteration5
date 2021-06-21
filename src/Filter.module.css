@@ -17,12 +17,22 @@
   background: #f9b916;
 }
 
+.cutoff_box {
+  margin_right: 15px;
+  padding-right: 15px;
+  overflow: hidden;
+}
+
 select[option].filter_box {
   overflow: hidden;
+  border: 0px 0px 1px 0px;
 }
 
 select.filter_box {
   display: inline;
+  /* border: none; */
+  border: 0px;
+  outline: 0px;
 }
 
 /* thought, a label is probably a block */
