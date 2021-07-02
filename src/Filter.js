@@ -9,9 +9,10 @@ import { LInk as RouterLink } from "react-router-dom";
 const countries_json = require("all-countries-and-cities-json");
 const student_status = ["High School", "Undergraduate", "Graduate"];
 // const years = ["1", "2", "3", "4"];
-
+const majors_list = majors.sort()
 // data formatting
 const countries = Object.keys(countries_json);
+const extracurriculars_list = extracurriculars.sort()
 
 // be able to use react
 const React = require("react");
@@ -178,118 +179,120 @@ class Filter extends React.Component {
     // }
 
     return (
-      <div>
-        <div className={styles.filter_box}>
-          <div className={styles.cutoff_box}>
-            Filter:
-            <form>
-              <label>
-                <input type="checkbox" value="nationality" />
-                Nationality:
-                <select
-                  value={this.state.filter_nationality}
-                  onChange={this.handleNationality}
-                >
-                  <option>{""}</option>
-                  {countries.map((country) => (
-                    <option>{country}</option>
-                  ))}
-                </select>
-              </label>
-              <label>
-                <input type="checkbox" value="school_name" />
-                School Name:
-                <input type="text" value={this.state.filter_school} />
-              </label>
-              <label>
-                Major:
-                <select
-                  value={this.state.filter_major1}
-                  onChange={this.handleNationality}
-                >
-                  <option>{""}</option>
-                  {majors.map((major) => (
-                    <option>{major}</option>
-                  ))}
-                </select>
-              </label>
-              <label>
-                <label>
-                  Major:
-                  <select
-                    value={this.state.filter_major2}
-                    onChange={this.handleNationality}
-                  >
-                    <option>{""}</option>
-                    {majors.map((major) => (
-                      <option>{major}</option>
-                    ))}
-                  </select>
-                </label>{" "}
-                <label>
-                  Major:
-                  <select
-                    value={this.state.filter_major3}
-                    onChange={this.handleNationality}
-                  >
-                    <option>{""}</option>
-                    {majors.map((major) => (
-                      <option>{major}</option>
-                    ))}
-                  </select>
-                </label>
-                Extracurricular:
-                <select
-                  value={this.state.filter_extracurricular1}
-                  onChange={this.handleNationality}
-                >
-                  {extracurriculars.map((extra) => (
-                    <option>{extra}</option>
-                  ))}
-                </select>
-              </label>
-              <label>
-                Extracurricular:
-                <select
-                  value={this.state.filter_extracurricular2}
-                  onChange={this.handleNationality}
-                >
-                  <option>{""}</option>
-                  {extracurriculars.map((extra) => (
-                    <option>{extra}</option>
-                  ))}
-                </select>
-              </label>
-              <label>
-                Extracurricular:
-                <select
-                  value={this.state.filter_extracurricular3}
-                  onChange={this.handleNationality}
-                >
-                  <option>{""}</option>
-                  {extracurriculars.map((extra) => (
-                    <option>{extra}</option>
-                  ))}
-                </select>
-              </label>
-              <label>
-                Education Level:
-                <select
-                  value={this.state.filter_education}
-                  onChange={this.handleNationality}
-                >
-                  <option>{""}</option>
-                  {student_status.map((level) => (
-                    <option>{level}</option>
-                  ))}
-                </select>
-              </label>
+      // <div>
+      <div className={styles.filter_box}>
+        {/* <div className={styles.cutoff_box}> */}
+        Filter:
+        <form>
+          <label>
+            <input type="checkbox" value="nationality" />
+            Nationality:
+            <select
+              value={this.state.filter_nationality}
+              onChange={this.handleNationality}
+            >
+              <option>{""}</option>
+              {countries.map((country) => (
+                <option>{country}</option>
+              ))}
+            </select>
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" value="school_name" />
+            School Name:
+            <input type="text" value={this.state.filter_school} />
+          </label>
+          <br />
+          <label>
+            Major:
+            <select
+              value={this.state.filter_major1}
+              onChange={this.handleNationality}
+            >
+              <option>{""}</option>
+              {majors_list.map((major) => (
+                <option>{major}</option>
+              ))}
+            </select>
+          </label>
+          <br />
+          <label>
+            <label>
+              Major:
+              <select
+                value={this.state.filter_major2}
+                onChange={this.handleNationality}
+              >
+                <option>{""}</option>
+                {majors_list.map((major) => (
+                  <option>{major}</option>
+                ))}
+              </select>
+            </label>{" "}
+            <label>
+              Major:
+              <select
+                value={this.state.filter_major3}
+                onChange={this.handleNationality}
+              >
+                <option>{""}</option>
+                {majors_list.map((major) => (
+                  <option>{major}</option>
+                ))}
+              </select>
+            </label>
+            Extracurricular:
+            <select
+              value={this.state.filter_extracurricular1}
+              onChange={this.handleNationality}
+            ><option>{""}</option>
+              {extracurriculars_list.map((extra) => (
+                <option>{extra}</option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Extracurricular:
+            <select
+              value={this.state.filter_extracurricular2}
+              onChange={this.handleNationality}
+            >
+              <option>{""}</option>
+              {extracurriculars_list.map((extra) => (
+                <option>{extra}</option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Extracurricular:
+            <select
+              value={this.state.filter_extracurricular3}
+              onChange={this.handleNationality}
+            >
+              <option>{""}</option>
+              {extracurriculars_list.map((extra) => (
+                <option>{extra}</option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Education Level:
+            <select
+              value={this.state.filter_education}
+              onChange={this.handleNationality}
+            >
+              <option>{""}</option>
+              {student_status.map((level) => (
+                <option>{level}</option>
+              ))}
+            </select>
+          </label>
 
-              {/* <Button type="submit" onClick={this.handleSubmit} component={RouterLink} to="/home/filter">Search using filter</Button> */}
-            </form>
-          </div>
-        </div>
+          {/* <Button type="submit" onClick={this.handleSubmit} component={RouterLink} to="/home/filter">Search using filter</Button> */}
+        </form>
       </div>
+      // </div>
     );
   }
 }

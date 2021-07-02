@@ -4,7 +4,7 @@
   height: 627px;
   left: 0;
   top: 200px;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -17,11 +17,16 @@
   background: #f9b916;
 }
 
-.cutoff_box {
-  margin_right: 15px;
+/* .cutoff_box {
+  margin-right: 15px;
   padding-right: 15px;
   overflow: hidden;
-}
+} */
+
+/* .cutoff_box select {
+  background-color: transparent;
+  max-width: 95%;
+} */
 
 select[option].filter_box {
   overflow: hidden;
@@ -31,8 +36,16 @@ select[option].filter_box {
 select.filter_box {
   display: inline;
   /* border: none; */
-  border: 0px;
-  outline: 0px;
+  max-width: 80%;
+  /* border: 0px;
+  outline: 0px; */
+  background-color: transparent;
+}
+
+.filter_box select {
+max-width: 90%;
+background-color: transparent;
+
 }
 
 /* thought, a label is probably a block */
