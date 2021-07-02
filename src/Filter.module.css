@@ -1,6 +1,6 @@
 .filter_box {
   position: absolute;
-  width: 15%;
+  width: 20%;
   height: 627px;
   left: 0;
   top: 200px;
@@ -33,19 +33,31 @@ select[option].filter_box {
   border: 0px 0px 1px 0px;
 }
 
-select.filter_box {
-  display: inline;
+/* select.filter_box { */
+  /* display: inline; */
   /* border: none; */
-  max-width: 80%;
+  /* max-width: 80%; */
   /* border: 0px;
   outline: 0px; */
-  background-color: transparent;
-}
+  /* background-color: transparent; */
+/* } */
 
-.filter_box select {
+.filter_box select, input[type="text"] {
 max-width: 90%;
 background-color: transparent;
 
 }
 
 /* thought, a label is probably a block */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+  .filter_box {
+    width: 25%;
+  }
+
+ 
+
+
+
+}
