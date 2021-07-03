@@ -42,10 +42,16 @@ select[option].filter_box {
   /* background-color: transparent; */
 /* } */
 
-.filter_box select, input[type="text"] {
+.filter_box select {
 max-width: 90%;
 background-color: transparent;
 
+border-radius: 10px;
+
+}
+
+.filter_box input {
+  max-width: 78%;
 }
 
 /* thought, a label is probably a block */

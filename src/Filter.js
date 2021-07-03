@@ -462,6 +462,17 @@ class Filter extends React.Component {
               </Form.Control>
             </Col>
           </Form.Group>
+          <br />
+            <Button
+                variant="contained"
+                color="primary"
+                onChange={this.handleSubmit}
+                type="submit"
+              >
+                Filter
+              </Button>
+            {/* </Col> */}
+          {/* </Form.Group> */}
         </Form>
       </div>
       //   <Form.Group as={Row} controlId="formHorizontalEmail">
