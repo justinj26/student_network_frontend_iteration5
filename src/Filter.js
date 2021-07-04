@@ -464,8 +464,8 @@ class Filter extends React.Component {
           </Form.Group>
           <br />
             <Button
-                variant="contained"
-                color="primary"
+                variant="outlined"
+               
                 onChange={this.handleSubmit}
                 type="submit"
               >

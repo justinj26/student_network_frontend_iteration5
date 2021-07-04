@@ -154,10 +154,10 @@ class Home extends React.Component {
           {/* <Buttonoolbar className="mr-2" aria-label="Toolbar with button groups">
             <ButtonGroup className="mr-2" aria-label="First group"> */}
           <Button component={RouterLink} to="/home">
-            Home
+            <b>Home</b>
           </Button>
           <Button component={RouterLink} to="home/user">
-            Profile
+            <b>Profile</b>
           </Button>
           {/* <Button component={RouterLink} to="">
             Mentors
@@ -166,10 +166,10 @@ class Home extends React.Component {
             <b>Inbox</b>
           </Button>
           <Button component={RouterLink} to="/home/Calendar">
-            Calendar
+            <b>Calendar</b>
           </Button>
           <Button component={RouterLink} to="home/search">
-            Search
+            <b>Search</b>
           </Button>
           {/* <Button
             variant="outlined"
