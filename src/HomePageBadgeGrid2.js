@@ -1,5 +1,6 @@
-import Grid from "@material-ui/core/Grid";
 import Badge from "./Badge";
+import Grid from "@material-ui/core/Grid";
+import styles from "./Home.module.css";
 // class HomePageBadgeGrid extends React.Component {
 //   constructor() {
 //     super(props);
@@ -8,18 +9,16 @@ import Badge from "./Badge";
 //   }
 // }
 
-export default function HomePageBadgeGrid(props) {
+export default function HomePageBadgeGrid2(props) {
   var badges = props.users.map((user) => (
-    <Grid item xs={6}>
+    <div>
       <Badge user={user} />
-    </Grid>
+    </div>
   ));
 
   return (
     <div>
-      <Grid container justify="space-evenly" alignItems="flex-start">
-        {badges}
-      </Grid>
+      <div className={styles.main_grid} >{badges}</div>
     </div>
   );
 }

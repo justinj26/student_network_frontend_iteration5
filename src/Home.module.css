@@ -1,3 +1,6 @@
+/* home page */
+
+/* top button row */
 .button_row {
   display: flex;
   justify-content: space-around;
@@ -12,6 +15,7 @@
   background: #f9b916;
 }
 
+/* left top banner */
 .sn_banner {
   display: flex;
   flex-wrap: wrap;
@@ -27,39 +31,67 @@
   margin: 0px;
 
   background: #f9b916;
-}
-/* The Student Network */
-.sn_banner {
+
+  /* left top banner: font */
+
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.25em;
+  font-size: 1.25rem;
+  /* font-size: 1rem; */
   line-height: 30px;
   /* or 111% */
 
   color: rgb(255, 0, 0);
 
-  border: 1px solirgb(184, 150, 150) 00;
+  border: 1px solirgb(184, 150, 150);
 }
 
+/* center grid */
 .main_grid {
   position: absolute;
-  width: 800px;
+  width: 50%;
   height: 622px;
   left: 25%;
+  /* right: 20%; */
   top: 254px;
+
+
+/* experiement with css grid */
+  display: grid;
 }
 
+/* */
 .button_row {
   display: flex;
   justify-content: space-around;
 
   position: absolute;
-  width: 85%;
+  width: 80%;
   height: 85px;
   right: 0;
   top: 0;
   font-weight: bold;
 
   background: #f9b916;
+}
+
+@media only screen and (min-width: 992px) {
+  .sn_banner {
+  }
+
+  .main_grid {
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .sn_banner {
+    font-size: 1rem;
+  }
+
+  .main_grid {
+  }
+}
+
+@media only screen and (max-width: 600px) {
 }

@@ -3,8 +3,9 @@
 
   text-align: left;
 
-  right: 0;
-  top: 305px;
+  width: 20%;
+  left: 80%;
+  top: 200px;
   overflow: hidden;
 
   border: 1px solid #000000;
@@ -14,4 +15,14 @@
   padding: 35px;
 
   background: #f9b916;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+  .matches_and_requests_box {
+    left: 75%;
+    width: 25%;
+
+  }
+
 }

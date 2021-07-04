@@ -16,6 +16,12 @@
   background-repeat: no-repeat;
 } */
 
+.flex_center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .header {
   display: inline-block;
   position: relative;
@@ -73,16 +79,17 @@ input[type="password"]:active {
   border-bottom: 1px solid #000000;
 }
 
-select {
+.login_box select {
 
   /* font-size: 18px; */
 
   background-color: transparent;
+  max-width: 90%;
   /* border-radius: 5px; */
  
 }
 
-select option {
+.login_box select option {
   margin: 40px;
   background: rgba(0, 0, 0, 0.3);
   color: black;
